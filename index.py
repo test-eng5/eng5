@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
 
-TOKEN = "8508922582:AAGszTmNqjsDJfUP8aajGfoHAG88p-LcmKE"
+TOKEN = "ВАШ ТОКЕН"
 bot = telebot.TeleBot(TOKEN)
 
 BLOCK_WORDS = ['купить', 'продам', 'акция', 'продаю', 'куплю', 'реклама', 'переходи', 'бесплатно']
@@ -173,4 +173,5 @@ if __name__ == "__main__":
     try:
         bot.polling(none_stop=True, interval=0)
     except Exception as e:
+
         print(f"❌ Ошибка при запуске бота: {e}")
