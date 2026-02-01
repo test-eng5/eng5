@@ -115,7 +115,7 @@ user_warnings = defaultdict(int)  # Хранение предупреждени�
 # ====================== ОБРАБОТЧИКИ КОМАНД ======================
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.reply_to(message, "🚫 Антиреклама активна! Сообщения с рекламой удаляются.")
+    bot.reply_to(message, "🚫 Антиреклама активна! Сообщения с рекламой удаляются. Помощь /help")
 
 @bot.message_handler(commands=['stats'])
 def stats(message):
@@ -306,4 +306,5 @@ if __name__ == "__main__":
         bot.polling(none_stop=True, interval=0)
     except Exception as e:
         print(f"❌ Ошибка при запуске бота: {e}")
+
 
