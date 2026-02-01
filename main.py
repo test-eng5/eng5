@@ -5,7 +5,7 @@ import time
 from typing import Dict, List
 from collections import defaultdict
 
-TOKEN = "7614311120:AAF7XucXR95-a4MY3SyMbdbM2rKnwB9iOHw"
+TOKEN = "token"
 bot = telebot.TeleBot(TOKEN)
 
 # ====================== КОНФИГУРАЦИЯ КЛЮЧЕВЫХ СЛОВ ======================
@@ -339,3 +339,4 @@ if __name__ == "__main__":
         bot.polling(none_stop=True, interval=0)
     except Exception as e:
         print(f"❌ Ошибка при запуске бота: {e}")
+
